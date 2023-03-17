@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(18, 18, 18);
+    background: linear-gradient(90deg, rgba(18, 18, 18, 1)26%, rgba(255, 255, 255, 1)26%, rgba(255, 255, 255, 1) 100%);
+}
+span{
+    color: rebeccapurple;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 7%;
+    padding-right: 4%;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+}
+
+.text {
+    position: absolute;
+    top: 60%;
+    left: 54%;
+    transform: translateY(-50%);
+}
+
+.text h1 {
+    color: black;
+    font-size: 100px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.text p {
+    color: #9897a9;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.text h3 {
+    font-size: 22px;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.img {
+    position: absolute;
+    top: 60%;
+    left: 17%;
+    transform: translateY(-50%);
+}
+
+.img img {
+    width: 500px;
+    height: 510px;
+    object-fit: cover;
+}
+.social{
+    position: fixed;
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+}
+.social ul li{
+    list-style: none;
+    text-align: center;
+    margin: 30px 0;
+}
+.social ul li i{
+    color: blueviolet;
+    font-size: 20px;
+}
+.social ul li i:hover{
+    transform: scale(1.2);
+    color: purple;
+    transition: .4s;
+}
+
+/*===== about - sobre ====*/
+.about {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .main img {
+    width: 580px;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+
+.all-text {
+    width: 600px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.main {
+    width: 1290px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.all-text h1 {
+    background: linear-gradient(90deg, #fff,#000);
+    font-size: 65px;
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.all-text p {
+    font-size: 16px;
+    color: #9897a9;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
