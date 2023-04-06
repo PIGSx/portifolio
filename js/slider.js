@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let slider = document.querySelector(".slider");
 let currentSlide = 0;
 let totalSlides = slider.querySelectorAll(".wrapper .left > div").length - 1;
@@ -17,4 +18,25 @@ slider.querySelector(".controls .down").addEventListener("click", function(){
     currentSlide++;
     slider.querySelector(".wrapper .left div").style.marginTop = `${currentSlide*-100}vh`;
     slider.querySelector(".wrapper .right div").style.marginTop = `${(totalSlides-currentSlide)*-100}vh`;
+=======
+let slider = document.querySelector(".slider");
+let currentSlide = 0;
+let totalSlides = slider.querySelectorAll(".wrapper .left > div").length - 1;
+
+slider.querySelector(".controls .up").addEventListener("click", function(){
+    if(currentSlide == 0){
+        return;
+    }
+    currentSlide--;
+    slider.querySelector(".wrapper .left div").style.marginTop = `${currentSlide*-100}vh`;
+    slider.querySelector(".wrapper .right div").style.marginTop = `${(totalSlides-currentSlide)*-100}vh`;
+})
+slider.querySelector(".controls .down").addEventListener("click", function(){
+    if(currentSlide == totalSlides){
+        return;
+    }
+    currentSlide++;
+    slider.querySelector(".wrapper .left div").style.marginTop = `${currentSlide*-100}vh`;
+    slider.querySelector(".wrapper .right div").style.marginTop = `${(totalSlides-currentSlide)*-100}vh`;
+>>>>>>> f9402d6258abb4fdbf8af7608189917deafcb4fb
 });
